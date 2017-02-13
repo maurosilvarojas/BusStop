@@ -27,9 +27,7 @@ namespace App0
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>http://datapoint.metoffice.gov.uk/public/data/resource?key=a3829754-3c64-4148-b5bd-c1f221c18c3e
-    /// //{"elevation":"69.0","id":"310114","latitude":"52.2401","longitude":"-0.9011","name":"Northampton","region":"em","unitaryAuthArea":"Northamptonshire"},
-    /// Sample API:http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/xml/310114?res=3hourly&key=a3829754-3c64-4148-b5bd-c1f221c18c3e
+
     public sealed partial class MainPage : Page
     {
         private MqttClient client;
@@ -154,7 +152,7 @@ namespace App0
         {
             myMap.Style = Windows.UI.Xaml.Controls.Maps.MapStyle.Aerial3DWithRoads;
             //token
-            myMap.MapServiceToken = "7pMH5pZF11w5Le16l05Z~qHzlmpJOSHtDcBFeFsDFPw~AtwucQgJteVmOGzegiZRQ8kELpCJvoot8Ssuq96znzAN5s3_Jq1Ne53hnLd2cuyR";
+            myMap.MapServiceToken = "";
 
             
             geoPosition.Latitude = 52.250465;

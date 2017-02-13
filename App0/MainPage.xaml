@@ -1,0 +1,25 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App0"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="App0.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="1024">
+            <RelativePanel Height="100" Background="#FFF9F9F9">
+                <TextBlock x:Name="textTime" Height="20" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="131,34,-131.6,-34"/>
+                <Button x:Name="startLocation" Content="START" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="104" Margin="804,16,-843.2,-39.2" Click="button_Click"></Button>
+                <Image x:Name="image" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="68" Margin="946,16,-1014,-69.6" Source="Assets/handyC.png" Tapped="image_Tapped"/>
+            </RelativePanel>
+            <StackPanel Height="539" Background="White">
+                <Maps:MapControl x:Name="myMap" Loaded="myMap_Loaded" Height="501"/>
+                <Slider x:Name="sliderZoom" Background="#FFB03B3B" Height="48" Margin="205,0,207,0" Maximum="20" LargeChange="0.1" StepFrequency="0.1" Value="16" ValueChanged="sliderZoom_ValueChanged" Foreground="Black" Minimum="13"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
